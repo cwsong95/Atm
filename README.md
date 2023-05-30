@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Simple ATM Controller
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple ATM controller implemented in React.js. It provides a basic user interface to simulate the flow of an ATM, including card insertion, PIN entry, account selection, and balance checking, deposit, and withdrawal operations.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To run the ATM controller locally, follow these steps:
 
-### `npm start`
+1. Clone the repository: `git clone <repository-url>`
+2. Change to the project directory: `cd atm-controller-react`
+3. Install the dependencies: `npm install`
+4. Start the application: `npm start`
+5. Open your browser and visit `http://localhost:3000`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The ATM controller provides a series of steps to simulate the ATM workflow:
 
-### `npm test`
+1. Insert Card: Click the "Insert Card" button to simulate card insertion.
+2. Enter PIN: Enter a PIN in the provided input field.
+3. Select Account: Enter an account number in the provided input field.
+4. See Balance: Click the "See Balance" button to display the account balance.
+5. Deposit: Enter an amount in the "Enter Amount" field and click the "Deposit" button to simulate a deposit operation.
+6. Withdraw: Enter an amount in the "Enter Amount" field and click the "Withdraw" button to simulate a withdrawal operation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please note that this implementation does not include actual API calls or back-end integration. It serves as a basic template for an ATM controller in React.js.
 
-### `npm run build`
+## Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The ATM controller includes a test file (`ATMController.test.js`) that verifies the behavior of the ATM user interface. To run the tests, use the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm test
